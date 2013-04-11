@@ -1,0 +1,21 @@
+[% INCLUDE 'doc-head-open.inc' %]
+ <title>Koha: Plugin: Record Merger</title>
+[% INCLUDE 'doc-head-close.inc' %]
+</head>
+<body>
+[% INCLUDE 'header.inc' %]
+[% INCLUDE 'cat-search.inc' %]
+
+<div id="breadcrumbs"><a href="/cgi-bin/koha/mainpage.pl">Home</a> &rsaquo; <a href="/cgi-bin/koha/plugins/plugins-home.pl">Plugins</a> &rsaquo; Record merger &rsaquo; Upload file</div>
+
+<div id="doc3">
+    <p>Please upload your CSV File</p>
+
+    <form method="post" enctype="multipart/form-data">
+        <input type="hidden" name="class" value="[% CLASS %]"/>
+        <input type="hidden" name="method" value="[% METHOD %]"/>
+        <p>File to upload: <input type="file" name="uploaded_file" /></p>
+        <input name="submitted" type="submit" value="Upload" />
+    </form>
+
+[% INCLUDE 'intranet-bottom.inc' %]
